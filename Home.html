@@ -2,15 +2,80 @@
 <html>
 
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Sansita' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Palanquin|Quicksand:500" rel="stylesheet"><link rel="stylesheet" type="text/css" href="CSS/Home.css">
-<script> src = "Home.js"></script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
 </head>
 
 <body>
 
-  <h1>Lovement</h1>
+
+<img = src= "photos/L O V E M E N T (5).png"
+  class="logo">
+  <h1>L o v e m e n t</h1>
  <h2>
    <form method="get" action="Home.html"><button class="button1" type="submit"> Home</button></form>
    <form method="get" action="OurStory.html"><button class="button1" type="submit"> Our Story</button></form>
@@ -18,20 +83,81 @@
    <form method="get" action="Events.html"><button class="button1" type="submit">Events</button></form>
    <form method="get" action="Articles.html"><button class="button1" type="submit">Articles</button></form>
  </h2>
-<!-- </div> -->
+
+<center>
+<h10>CHANGE STARTS WITH YOU.</h10>
+</center>
+
+<div class="slideshow-container" style="margin-left: 40px">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="photos/home2.jpeg" style="width:70%">
+
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="photos/home4.jpeg" style="width:70%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="photos/home3.jpeg" style="width:70%">
+  <!-- <div class="text">Caption Three</div> -->
+</div>
+
+</div>
+<br>
+
+<div style="margin-left:280px">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="ms-container">
+<h3>We strive to inspire our youth to be socially and politically aware and spark activism <br>within their communities.<br> Learn about today's powerful movements<br> you can help progress. They may even inspire you <br>to start your own.</h3>
+
+<!-- <h12>#WHATISTANDFOR</h12> -->
+
+
+
+<!--
+
 <div class= "column">
 
-  <h3>We strive to inspire our youth to be socially and politically<br>aware, and spark activism within their communities.</h3>
-</div>
+
 
 <br><br><br><br><br><br><br><br><br>
 
 <h4><center>What's Going On?</center><h4>
 <div id = "container">
-<h5><center>Insert article Here BoIIII</center></h5>
+ <h5><center>Insert article Here BoIIII</center></h5>
 </div>
-
-
+<h11>Often youth feel powerless, whether they are trying to make a change across nations or simply in their community. -->
 
 
 
