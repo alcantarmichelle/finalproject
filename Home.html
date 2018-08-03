@@ -1,23 +1,71 @@
 <!DOCTYPE>
 <html>
+  <head>
 
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Palanquin|Quicksand:500" rel="stylesheet"><link rel="stylesheet" type="text/css" href="CSS/Home.css">
+  <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin|Quicksand:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" type="text/css" href="CSS/Home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+/* The font style for the buttons on the drop down menu */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+/* Slide Show Design on the Home Page */
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
   position: relative;
   margin: auto;
 }
-/* Caption text */
+
+/* Text Style for Slide Show */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -27,6 +75,7 @@ img {vertical-align: middle;}
   width: 100%;
   text-align: center;
 }
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -35,6 +84,7 @@ img {vertical-align: middle;}
   position: absolute;
   top: 0;
 }
+
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
@@ -45,9 +95,11 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .active {
   background-color: #717171;
 }
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -55,38 +107,54 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-</style>
+
+  </style>
 </head>
 
 <body>
+  <div id= "grad1">
 
+<!-- Title and Logo -->
 
-<img = src= "photos/L O V E M E N T (5).png"
-  class="logo">
-  <h1>L o v e m e n t</h1>
+<img = src= "photos/L O V E M E N T (5).png" class="logo">
+  <h1>Lovement</h1>
+
+<!-- Buttons For Home Page -->
+
  <h2>
    <form method="get" action="Home.html"><button class="button1" type="submit"> Home</button></form>
    <form method="get" action="OurStory.html"><button class="button1" type="submit"> Our Story</button></form>
    <form method="get" action="WCYD.html"><button class="button1" type="submit"> What You Can Do</button></form>
    <form method="get" action="Events.html"><button class="button1" type="submit">Events</button></form>
-   <form method="get" action="Articles.html"><button class="button1" type="submit">Articles</button></form>
- </h2>
 
-<center>
-<h10>CHANGE STARTS WITH YOU.</h10>
-</center>
+   <div class="dropdown">
+     <button class="button1">Articles</button>
+     <div class="dropdown-content">
+       <form method="get" action="BlackLivesMatter.html"><button class="button1" type="submit">#BlackLivesMatter</button></form>
+       <form method="get" action="NoBanNoWall.html"><button class="button1" type="submit">#NoBanNoWall</button></form>
+       <form method="get" action="LoveWins.html.html"><button class="button1" type="submit">#LoveWins</button></form>
+       <form method="get" action="MeToo.html"><button class="button1" type="submit">#MeToo</button></form>
+       <form method="get" action="EndGunViolence.html"><button class="button1" type="submit">#EndGunViolence</button></form>
+       <form method="get" action="AllArticles.html"><button class="button1" type="submit">All Articles</button></form>
+  </h2>
+
+<center><h10>CHANGE STARTS WITH YOU.</h10></center>
+<br>
 
 <div class="slideshow-container" style="margin-left: 40px">
 
@@ -94,23 +162,20 @@ img {vertical-align: middle;}
   <div class="numbertext">1 / 3</div>
   <img src="photos/home2.jpeg" style="width:70%">
 
-  <!-- <div class="text">Caption Text</div> -->
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="photos/home4.jpeg" style="width:70%">
-  <!-- <div class="text">Caption Two</div> -->
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="photos/home3.jpeg" style="width:70%">
-  <!-- <div class="text">Caption Three</div> -->
 </div>
 
 </div>
-<br>
+  <br>
 
 <div style="margin-left:280px">
   <span class="dot"></span>
@@ -119,6 +184,9 @@ img {vertical-align: middle;}
 </div>
 
 <script>
+
+// Slideshow for Home page
+
 var slideIndex = 0;
 showSlides();
 function showSlides() {
@@ -139,18 +207,25 @@ function showSlides() {
 }
 </script>
 
-<div class="ms-container">
-<h3>We strive to inspire our youth to be socially and politically aware and spark activism within their communities.<br> Learn about today's powerful movements<br> you can help progress. They may even inspire you <br>to start your own.</h3>
-</div>
+<!-- Mission Statement Container  -->
 
-<br>
+<div class="ms-container">
+
+<h3>   Mission Statement
+<div><br>We strive to inspire our youth to be socially and politically aware and spark activism within their communities.<br> Learn about today's powerful movements<br> you can help progress. They may even inspire you <br>to start your own.</h3>
+</div>
+  <br>
+
+<!-- Twitter API -->
 
 <div class= "TwitterBox">
 <a class="twitter-timeline" href="https://twitter.com/Lovement1?ref_src=twsrc%5Etfw">Tweets by Lovement1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <a href="https://twitter.com/Lovement1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Lovement1</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <a href="https://twitter.com/intent/tweet?screen_name=Lovement1&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @Lovement1</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 
-</body>
+    </div>
+  </div>
 
+  </body>
 </html>
+
